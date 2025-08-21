@@ -1,1 +1,1 @@
-# waiting-platform
+# mpc-stg-test-repo
