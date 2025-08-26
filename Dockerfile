@@ -21,6 +21,7 @@ RUN go build -a -o main main.go
 # https://catalog.redhat.com/software/containers/ubi9/ubi-minimal/615bd9b4075b022acc111bf5
 FROM registry.access.redhat.com/ubi9/ubi-minimal:9.6-1755695350
 COPY --from=builder /opt/app-root/src/main /
+COPY licenses/ /licenses/
 USER 65532:65532
 
 ENTRYPOINT ["/main"]
